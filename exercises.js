@@ -238,13 +238,17 @@ var bango5 = 8
 var num1 = 1
 var num2 = 2
 var num3 = 3
+function add(num1, num2) {
+    return num1 + num2;
+}
+function subtract(num1, num2) {
+    return num2 - num1;
+}
 function addThenSubtract(num1, num2, num3) {
-	return num1 + num2 - num3;
+	return add(num1, num2), subtract(add(num1, num2), num3);
 }
 var answer3 = addThenSubtract(num1, num2, num3)
 console.log(answer3);
-
-
 /*
  * #11
  * Function - multiplyThenDivide
@@ -261,8 +265,14 @@ console.log(answer3);
 var num1 = 1
 var num2 = 2
 var num3 = 3
+function divide(num1, num2) {
+    return num1 / num2;
+}
+function multiply(num1, num2) {
+    return num1 * num2;
+}
 function multiplyThenDivide(num1, num2, num3) {
-	return (num1 * num2) / num3;
+	return  multiply(num1, num2), divide(multiply(num1, num2), num3);
 }
 var answer4 = multiplyThenDivide(num1, num2, num3)
 console.log(answer4);
