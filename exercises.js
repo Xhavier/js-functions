@@ -26,7 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var bango1 = 6;
+var bango2 = 5;
 
 /*
  * #2
@@ -42,10 +43,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-
-
-
-
+var num1 = 1
+var num2 = 2
+function add(num1, num2) {
+    return num1 + num2;
+}
+var sum = add(num1, num2);
+console.log(sum);
 /*
  * #3
  * Function - subtract
@@ -59,12 +63,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
-
-
-
-
-
+var num1 = 1
+var num2 = 2
+function subtract(num1, num2) {
+    return num2 - num1;
+}
+var difference = subtract(num1, num2);
+console.log(difference);
 /*
  * #4
  * Function - multiply
@@ -78,9 +83,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
-
-
-
+var num1 = 1
+var num2 = 2
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+var product = multiply(num1, num2);
+console.log(product);
 
 /*
  * #5
@@ -95,7 +104,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
-
+var num1 = 1
+var num2 = 2
+function divide(num1, num2) {
+    return num1 / num2;
+}
+var quotient = divide(num1, num2);
+console.log(quotient);
 
 
 /*
@@ -109,7 +124,15 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
+var num1 = 1
+var num2 = 2
+function add(num1, num2) {
+    return num1 + num2;
+}
+var sum = add(num1, num2);
+var x = add(num1, num2);
+var checkSum = "Mariah Carey has been married " + x + " times."
+console.log(checkSum);
 
 
 
@@ -126,11 +149,19 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
+var num1 = 1
+var num2 = 2
+function subtract(num1, num2) {
+    return num2 - num1;
+}
+var difference = subtract(num1, num2);
+var x = subtract(num1, num2);
+var checkDifference = "Last night I dreamt that I ate " + x + " Taco Bell soft tacos."
+console.log(checkDifference);
 
 
 
-/*
- * #8
+ /* #8
  * Function - checkProduct
  * Create a function named `checkProduct` which does not require any parameters.
  *
@@ -139,8 +170,23 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the sum and product variables.
  * Console.log your result.  
 */
+var num1 = 1
+var num2 = 2
+function add(num1, num2) {
+    return num1 + num2;
+}
+var sum = add(num1, num2);
 
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+var product = multiply(num1, num2);
 
+function checkProduct(sum, product) {
+	return sum * product;
+}
+var answer1 = checkProduct(sum, product)
+console.log(answer1)
 /*
  * #9
  * Function - checkQuotient
@@ -151,9 +197,22 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
+var num1 = 1
+var num2 = 2
+function divide(num1, num2) {
+    return num1 / num2;
+}
+var quotient = divide(num1, num2);
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+var product = multiply(num1, num2);
 
-
-
+function checkQuotient(quotient, product) {
+	return quotient * product;
+}
+var answer2 = checkQuotient(quotient, product)
+console.log(answer2)
 /*
  * #10
  * Function - addThenSubtract
@@ -173,8 +232,17 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
+var bango3 = 4
+var bango4 = 7
+var bango5 = 8
+var num1 = 1
+var num2 = 2
+var num3 = 3
+function addThenSubtract(num1, num2, num3) {
+	return num1 + num2 - num3;
+}
+var answer3 = addThenSubtract(num1, num2, num3)
+console.log(answer3);
 
 
 /*
@@ -190,11 +258,14 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
+var num1 = 1
+var num2 = 2
+var num3 = 3
+function multiplyThenDivide(num1, num2, num3) {
+	return (num1 * num2) / num3;
 }
-
-
+var answer4 = multiplyThenDivide(num1, num2, num3)
+console.log(answer4);
 /*
  * #12
  * Function - createFullName
@@ -206,9 +277,13 @@ console.log(testGreeting); // printing the output value of the function.
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-
-
-
+var firstName = "Xhavier"
+var lastName = "Teocson"
+function createFullName(firstName, lastName) {
+	return firstName + " " + lastName;
+}
+var myFullName = createFullName(firstName, lastName);
+console.log(myFullName);
 /*
  * #13 
  * Function - eatFood
@@ -222,9 +297,14 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
-
-
-
+var firstName = "Xhavier"
+var lastName = "Teocson"
+var food = "Spaghet"
+function createFullName(firstName, lastName, food) {
+	return firstName + " " + lastName + " " + "will eat" + " " + food;
+}
+var myFood = createFullName(firstName,lastName, food);
+console.log(myFood);
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
 *  gained figure out how to build the necessary functions. Use your google-fu to 
@@ -237,8 +317,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
-
+var inches = 10
+function shoeSize(inches){
+	return inches * 2.54;
+}
+var centimeters = shoeSize(inches);
+console.log(centimeters);
 
 /*
  * #15
@@ -249,9 +333,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
-
-
+var str = "hippety hoppity, you are now my property."
+function allCaps(str) {
+	return str.toUpperCase();
+}
+var sentence = allCaps(str);
+console.log(sentence);
 /*
  * #16
  * Function oneCap
@@ -259,9 +346,12 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
-
-
+var str = "hippety hoppity, you are now my property."
+function oneCap(str) {
+	return str.charAt(0).toUpperCase();
+}
+var sentence2 = oneCap(str);
+console.log(sentence2);
 /*
  * #17
  * Function - verifyDrinkingAge
@@ -272,16 +362,30 @@ console.log(testGreeting); // printing the output value of the function.
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
-
-
+var age = 15
+function verifyDrinkingAge(age) {
+	return Boolean(age > 21);
+}
+var booze = verifyDrinkingAge(age);
+console.log(booze);
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
+var age = 15
+function verifyDrinkingAge(age) {
+	return Boolean(age > 21);
+}
+var canDrink = verifyDrinkingAge(age);
+function throwParty(canDrink) {
+	if (canDrink) {
+		return "Cheee Hoo! We going to da party!"}
+	else {
+		return "Meh, see you at Starbucks."}
+}
+var canParty = throwParty(canDrink);
+console.log(canParty);
 
 
 
